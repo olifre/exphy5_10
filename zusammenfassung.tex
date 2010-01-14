@@ -79,7 +79,7 @@ colorlinks = {false}
 \author{Studenten}
 \date{Wintersemester 2009/10}
 \subject{Experimentalphysik 5} \title{Zusammenfassung}
-\recalctypearea
+%\recalctypearea
 \begin{document}
 %\raggedbottom
 %\frontmatter
@@ -201,21 +201,54 @@ colorlinks = {false}
 
 \section{Rutherford-Streuung}
 \label{sec:rutherford-streuung}
+FORMELZEUGS
 
 \section{Relativistische Variablen \& Kinematik}
 \label{sec:relat-vari-}
 
 \section{Bindungsenergien}
 \label{sec:bindungsenergien}
+\begin{itemize}
+\item Die Gesamtmasse eines Atoms ist geringer als die Gesamtmasse
+  seiner Konstituenten
+  \begin{align*}
+    \Rightarrow m_{\mathrm{k}}(Z,N)&=Z \cdot m_{\mathrm{p}} + N \cdot
+    m_{\mathrm{n}} - \Delta m_{\mathrm{k}} & \text{Massendefekt}
+  \end{align*}
+\item es muss Energie aufgewandt werden, um die Konstituenten zu
+  trennen $\Rightarrow$ Bindungsenergie\\
+HIER KOMMEN WILDE FORMELN
+\end{itemize}
 
 \section{Tröpfchenmodell}
 \label{sec:tropfchenmodell}
+\begin{itemize}
+\item Form so, dass $E_{\text{ges}}$ minimal; Minimierung der
+  Oberflächenspannung, kurzreichweitige Kraft
+\item große Zahl an Nukleonen in schweren Kernen
+\item Wert der Bindungsenergie steigt mit Zahl der Nukleonen im Kern
+\item Messung: Sättigung bei $\SIrange{55}{60}{\amu}$ $\Rightarrow$ kurzreichweitig
+\item nicht alle Nukleonen im Kern erfahren gleiche Kraft:\\
+  die an Oberfläche $\Rightarrow$ weniger Nachbarn $\Rightarrow$
+  kleiner Kraft\\
+  \textbf{Coulomb:} lockert Bindung; Asymmetrie Zahl Proton \& Neutron
+  mindert Bindungsenergie\\
+  Paarungskräfte zwischen gleichartigen Nukleonen verstärken Bindung
+\end{itemize}
 
 \section{Weizsäcker--Massenformel}
 \label{sec:weizs-mass}
+FORMELKRAM
 
 \section{Fermi-Gas--Modell}
 \label{sec:fermi-gas-modell}
+\begin{itemize}
+\item Nukleonen befinden sich in einem statistischen Ensemble
+\item Nukleonen sind Fermionen (Spin = $\nicefrac{1}{2}$)
+\item Gas unabhängiger Teilchen
+\item Nukleonen befinden sich in einem Kastenpotential
+\end{itemize}
+FORMELZEUGS
 
 \section{Photoeffekt}
 \label{sec:photoeffekt}
@@ -228,12 +261,52 @@ colorlinks = {false}
 
 \section{Ionistationsprozesse geladener Teilchen}
 \label{sec:ionist-gelad-teilch}
+FORMELZEUGS
+
+\begin{itemize}
+\item Maximum Ionisationsdichte Bragg--Peak
+\item \textbf{Elektronen \& Positronen}
+  \begin{itemize}
+  \item kurze Wechselwirkungszeit $\Rightarrow$ können nur minimal ionisieren
+  \item relativistischer Energiebereich: Cerenkov--Effekt
+  \end{itemize}
+\item \textbf{Cerenkov--Effekt}
+  \begin{itemize}
+  \item langsames \Pelectron polarisiert beim Durchgang Atome
+  \item da symmetrisches Polarisationsfeld $\Rightarrow$ keine EM--Emission
+  \item schnelles \Pelectron "`überholt"' sein Strahlungsfeld
+  \item Dipolfeld entsteht $\Rightarrow$ Cerenkov--Strahlung
+  \end{itemize}
+\item \textbf{Bremsstrahlung}\\
+  \Pelectron strahlt Photonen ab, beim Abbremsen im Feld des Kerns
+  linear mit Energie, quadratisch mit $Z$
+\end{itemize}
 
 \section{Driftkammer}
 \label{sec:driftkammer}
+\begin{itemize}
+\item angelegte Hochspannung $\Rightarrow$ elektrisches Feld
+\item geladenes Teilchen ionisiert Gas auf dem Weg durch die Driftkammer
+\item \Pelectron driften entlang der Feldlinien
+\item lineare Beziehung:
+  \begin{align*}
+    x&=x_{\text{Draht}}+v_{\text{Drift}}\del{t_{\text{Draht}}-t_{0}}
+  \end{align*}
+\end{itemize}
+werden auch Proportionalitätszähler genannt. 
 
-\section{Gas-Ionisations--Detektor}
+\section{Gas-Ionisations--Detektor \emph{(s.o.)}}
 \label{sec:gas-ionis-detekt}
+\begin{itemize}
+\item Feldstärke Anodendrähte
+  \begin{align*}
+    E&=\frac{1}{r} \frac{V_{0}}{\ln\del{\frac{a}{b}}}\\
+    a&=\phi \text{ Kathode}\\
+    b&=\phi \text{ Anode}
+  \end{align*}
+\item verschiedene Betriebsmodi:\\
+  u.A. vollständige Entladung: Geiger-Müller
+\end{itemize}
 
 \section{Szintillatoren}
 \label{sec:szintillatoren}
@@ -243,12 +316,44 @@ colorlinks = {false}
 
 \section{Halbleiterdetektoren}
 \label{sec:halbleiterdetektoren}
+\begin{itemize}
+\item Vorteile:\\
+  kleiner dimensioniert: Energieabgabe erfolgt kleinstufiger\\
+  $\Rightarrow$ höhere Auflösung: größere Reichweite
+\item \Pproton-\Pneutron--Übergang: wechselseitige Diffusion von
+  \Pelectron und \Pproton
+  \begin{itemize}
+  \item Diffusionsspannung $V_{0}$
+  \item Verarmungsschicht (frei von beweglichen Ladungsträgern)
+  \end{itemize}
+\item eintretende ionisierende Teilchen (in Sperrschicht) erzeugen
+  \Pelectron-Lock--Paar (\Pelectron im Valenzband werden in CB angeregt)
+\item Prinzip entspricht Festkörper Ionisationskammer
+\end{itemize}
 
 \section{$\gamma$--Spektren}
 \label{sec:gamma-spektren}
+\begin{itemize}
+\item höchste Peaks: Totalabsorption
+\item nach Locke: Compton--Kontinuum
+\item Compton--Kante $\hat{=}$ Streuwinkel $\SI{180}{degree}$
+\item auf Compton--Kontinuum: Rückstreupeak\\
+  (tritt bei Messungen mit radioaktiven Quellen aus Streuprozessen mit
+  Materialien auf an Quellen--Rückseite)
+  \begin{itemize}
+  \item $E_{\mathrm{R}}-E_{\mathrm{P}}-E_{\text{Compton--Kante}}$
+  \end{itemize}
+\item ist $\gamma$--Energie $>$ Paarerzeugungsschwelle ($\sim \SI{1}{\MeV}$)
+  \begin{itemize}
+  \item 2 $\gamma$--Quanten aus Positronenzerstrahlung bei $\SI{511}{\keV}$
+  \end{itemize}
+\item single-- / double--escape--peaks: Abstand von
+  $m_{\mathrm{e}}c^{2}$, $2 \cdot m_{\mathrm{e}}c^{2}$ falls
+  $\gamma$--Quanten nicht vollständig absorbiert werden
+\end{itemize}
 
 \section{Multipolentwicklung}
 \label{sec:multipolentwicklung}
- 
+FORMELKRAM 
 
 \end{document}
