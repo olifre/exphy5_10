@@ -40,6 +40,7 @@
 \usepackage{braket}
 \usepackage{commath}
 \usepackage{xfrac}
+\usepackage{esvect}
 \usepackage{siunitx}
 \sisetup{decimalsymbol={comma},per=fraction,fraction=sfrac,tophrase=dots,seperr,repeatunits=false}
 \usepackage{hepnames}
@@ -201,10 +202,74 @@ colorlinks = {false}
 
 \section{Rutherford-Streuung}
 \label{sec:rutherford-streuung}
-FORMELZEUGS
+\begin{itemize}
+\item Ziel: Abschätzung für Größe Atomkern
+\item Experiment: $\alpha$--Teilchen auf Gold--Platte
+\item Streuung auch $\SIrange{160}{170}{\degree}$ $\Rightarrow$
+  Ladungen an denen $\alpha$--Teilchen gestreut werden $\ll$ Raum
+  verteil als angenommen
+\item Ansatz "`Kepler--Problem"' $\Rightarrow$ Coulomb--Kraft als Zentralkraft
+\end{itemize}
+\textbf{Anmerkung:}\\
+Schwerpunkts- und Laborkoordinaten können als identisch betrachtet
+werden, wenn die Projektilmasse $\ll$ Stoßpartnermasse\\
+$\Rightarrow$ \textbf{Bewegungsgleichung:}
+\begin{align*}
+  m \ddot{r} - mr\dot{\phi}^{2}&=\frac{1}{4\pi\epsilon_{0}} \frac{Z_{1}Z_{2}e^{2}}{r^{2}}
+\end{align*}
+BILD3\\
+$\Rightarrow$ \textbf{Lösung:}\\
+\begin{align*}
+  \frac{1}{r}&=\frac{1}{b}\sin\phi +
+  \frac{D}{2b^{2}}\del{\cos\phi-1}\\
+  D&=\frac{Z_{1}Z_{2}e^{2}}{4\pi\epsilon_{0}T_{\infty}}\\
+  b&\text{ Stoßparameter}\\
+  \tan{\nicefrac{\theta}{2}}&=\frac{Z_{1}Z_{2}e^{2}}{8\pi\epsilon_{0}bT}\\
+  \intertext{Gleichung einer Hyperbel in Polarkoordinaten. Winkel, in
+    dem Teilchen gestreut wurden:} \theta&=\pi-\phi\\
+  r&\rightarrow \infty\\
+  \phi&\rightarrow \pi-\theta\\
+  \rightarrow b&=\frac{D}{2}\cot{\nicefrac{\theta}{2}}
+\end{align*}
+\textbf{Verlauf:}\\
+BILD4\\
+Kreisring $2\pi b \de b$\\
+Öffnungswinkel: $\de \theta=2\pi \sin\theta \de \Omega$
+\begin{align*}
+  j 2\pi b \de b&=j2\pi \sin\theta \de \sigma (\theta) \de \Omega\\
+  \sigma(\theta)&=\frac{b}{\sin\theta} \abs{\od{b}{\theta}}\\
+  \Rightarrow \od{\sigma(\theta)}{\Omega}&=\del{\frac{D}{u}}^{2}
+  \frac{1}{\sin^{4}\del{\nicefrac{\theta}{2}}}=\del{\frac{Z_{1}Z_{2}e^{2}}{4\pi\epsilon_{0}4
+    T_{\infty}}}^{2} \frac{1}{\sin^{4}\del{\nicefrac{\theta}{2}}}
+\end{align*}
 
 \section{Relativistische Variablen \& Kinematik}
 \label{sec:relat-vari-}
+\begin{itemize}
+\item 4er--Vektor:
+  \begin{align*}
+    \begin{pmatrix}
+      E \\ \vv{p}
+    \end{pmatrix}
+  \end{align*}
+\item Geschwindigkeit: $\frac{\vv{v}}{c}=\beta=\frac{\vv{p}}{E}$
+  $\Rightarrow$ $\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$
+\item $t$--Kanal:
+  \begin{align*}
+    t&=q^{2}=\del{p_{t}-p_{i}}^{2}=-Q^{2}\\
+    Q&=\del{m_{\text{eing}}-m_{\text{ausg}}}c^{2}\\
+    \Rightarrow \abl{\sigma}{Q^{2}}&=\frac{4\pi
+      \del{zZe^{2}}^{2}}{v^{2}Q^{4}}\\
+    Q&>0 & \text{exotherm}\\
+    Q&<0 & \text{endotherm}\\
+    Q&=0 & \text{elastisch}
+  \end{align*}
+\item 2-Körper--Streuung:
+  \begin{align*}
+    s&=
+  \end{align*}
+\end{itemize}
+MEHR
 
 \section{Bindungsenergien}
 \label{sec:bindungsenergien}
