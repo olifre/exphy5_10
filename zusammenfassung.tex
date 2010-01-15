@@ -266,10 +266,22 @@ Kreisring $2\pi b \de b$\\
   \end{align*}
 \item 2-Körper--Streuung:
   \begin{align*}
-    s&=
+    s&=\del{p_{1}+p_{2}}^{2} > \del{E_{1}+E_{2}}^{2}-\del{\vv{p_{1}}^{2}+\vv{p_{2}}^{2}}
   \end{align*}
+  invariant in allen Koordinatensystemen\\
+  \texttt{CM}--System:
+  \begin{align*}
+    \vv{p}_{1,\mathtt{CM}}&=-\vv{p}_{1,\mathtt{CM}}\\
+    s&=E_{\mathtt{CM}}^{2}
+  \end{align*}
+  free energy
+\item ebenfalls invariant:
+  \begin{align*}
+    t&=\del{p_{\mathrm{f}}-p_{\mathrm{i}}}^{2}=\del{E_{1}^{\mathrm{f}}-E_{1}^{\mathrm{i}}}^{2}-\del{p_{1}^{\mathrm{f}}-p_{1}^{\mathrm{i}}}^{2}
+  \end{align*}
+  mit $\mathrm{f}$: final und $\mathrm{i}$: initial\\
+  "`quadriterter Impulsübertrag"'
 \end{itemize}
-MEHR
 
 \section{Bindungsenergien}
 \label{sec:bindungsenergien}
@@ -282,7 +294,14 @@ MEHR
   \end{align*}
 \item es muss Energie aufgewandt werden, um die Konstituenten zu
   trennen $\Rightarrow$ Bindungsenergie\\
-HIER KOMMEN WILDE FORMELN
+  Separationsenergie für Proton:
+  \begin{align*}
+    E_{\mathrm{S}}(\Pp)&=m_{\mathrm{k}}(Z,N)c^{2}-m_{\mathrm{k}}(Z-1,N)c^{2}-m_{\mathrm{p}}c^{2}
+  \end{align*}
+\item Separationsenergie $\alpha$--Teilchen:
+  \begin{align*}
+    E_{\mathrm{S}}(\alpha)&=m_{\mathrm{k}}(Z,N)c^{2}-m_{\mathrm{k}}(Z-2,N-2)c^{2}-2m_{\mathrm{p}}c^{2}-2m_{\mathrm{n}}c^{2}-E_{\mathrm{B}}(Z=N=2)
+  \end{align*}
 \end{itemize}
 
 \section{Tröpfchenmodell}
@@ -317,9 +336,55 @@ FORMELZEUGS
 
 \section{Photoeffekt}
 \label{sec:photoeffekt}
+\begin{itemize}
+\item Strahlung trifft auf Atom; Photonen wechselwirken mit
+  Hüllenelektronen $\rightarrow$ Totalabsorption = Photoeffekt
+\item Photonenintensität wird verringert
+  \begin{align*}
+    I&=I_{0} \cdot \mathrm{e}^{-\mu x}\\
+    \mu&: \lueck \text{Schwächungskoeffizient}\\
+    \mu&: \lueck \text{Moderiallänge}\\
+    \frac{\mu}{\rho}&=\frac{N_{\mathrm{A}}}{A} \sum_{i} \sigma_{i}
+  \end{align*}
+\item bei Energien oberhalb der Ionisationsenergie bis ca.
+  $\SI{100}{\keV}$ dominiert Photoeffekt
+\item Photon gibt bei einem Stoß meist seine gesamte Energie ab:
+  \begin{align*}
+    T_{\mathrm{e}}&=kr - E_{\mathrm{B}}\del{e_{\mathrm{j}}}
+  \end{align*}
+  (Rückstoßenergie wird vom gesamten Atom übernommen)
+\item Dominanz der Absorption in der \texttt{K}--Schale wenn
+  Photonenenergie $>$ Bindungsenergie \texttt{K}--Schale
+\item Wirkungsquerschnitt energieabhängig:
+  \begin{align*}
+    \sigma_{\text{Phot.}}^{\mathrm{k}}&=\del{\frac{32}{\epsilon^{7}}}^{\nicefrac{1}{2}}
+    \alpha^{4}Z^{5}\sigma_{\text{Th}}^{\mathrm{e}}\\
+    \epsilon&=\frac{E_{\gamma}}{m_{\mathrm{e}}c^{2}}\\
+    \sigma_{\text{th}}^{\mathrm{e}}&=\frac{8}{3}\pi r_{\mathrm{e}}^{2}=\SI{6,65E-25}{\centi\metre\squared}
+  \end{align*}
+  mit $\epsilon$ als reduzierte Photonenergie, $\sigma_{\text{Th}}$
+  als Thomson--Wirkungsquerschnitt $\Rightarrow$ klassische \Pelectron-\Pphoton--Streuung
+\item für freie \Pelectron ist dieser Prozess unmöglich wegen $E$--
+  und $p$--Erhaltung ($\Rightarrow$ Rückstoßpartner nötig)
+\end{itemize}
 
 \section{Compton--Effekt}
 \label{sec:compton-effekt}
+\begin{itemize}
+\item tritt oberhalb von $\SI{100}{\keV}$ auf
+\item ist elastische Streuung von Photonen an quasifreien \Pelectron
+  (da Bindungsenergie klein gegen $\SI{100}{\keV}$)
+\item elastischer Stoß: Energie- \& Impulserhaltung
+  \begin{align*}
+    E_{\gamma} + m_{\mathrm{e}}c^{2}&=E_{\gamma}^{\prime}+E\\
+    \frac{\vv{n} E_{\gamma}}{c}&=\vv{n}^{\prime}
+    \frac{E_{\gamma}^{\prime}}{c}+\vv{p}\\
+    \vv{n} \cdot \vv{n}^{\prime}&=\cos\theta
+    \intertext{quadrieren und zweite Zeile minus erste Zeile liefert:} 
+    \lambda^{\prime}-\lambda&=\underbrace{\frac{h}{m_{\mathrm{e}}c}}_{\lambda_{c}}\del{1-\cos\theta}
+  \end{align*}
+\end{itemize}
+BILDERFORMELKRAM
 
 \section{Paarbildung}
 \label{sec:paarbildung}
@@ -419,6 +484,78 @@ werden auch Proportionalitätszähler genannt.
 
 \section{Multipolentwicklung}
 \label{sec:multipolentwicklung}
-FORMELKRAM 
+\begin{itemize}
+\item allgemeines Potential:
+  \begin{align*}
+    \phi(\vv{r})&=\frac{1}{4\pi\epsilon_{0}}
+    \int_{v}\frac{\rho\del{\vv{r}^{\prime}}}{\abs{\vv{r}-\vv{r}^{\prime}}}
+    \de^{3}r^{\prime}\\
+    \intertext{Entwicklung:}
+    \frac{1}{\abs{\vv{r}-\vv{r}^{\prime}}}&=\frac{1}{\sqrt{r^{2}+r^{\prime
+        2}-2rr^{\prime}\cos\alpha}}\\
+  \Rightarrow \frac{1}{r}
+  \sum_{l=0}^{\infty}\del{\frac{r^{\prime}}{r}}^{l} P_{l}\del{\cos\alpha}
+  \end{align*}
+\item $l=0$ Monopol
+  \begin{align*}
+    \phi_{\mathrm{M}}&=\frac{1}{r} \int \rho\del{r^{\prime}} \de^{3} r^{\prime}=\frac{Q}{r}
+  \end{align*}
+\item $l=1$ Dipol
+  \begin{align*}
+    \phi_{\mathrm{D}}&=\frac{1}{r^{2}} \int \rho\del{\vv{r}^{\prime}}
+    Z^{\prime} \de^{3} r^{\prime}
+  \end{align*}
+\item $l=2$ Quadrupol
+  \begin{align*}
+    \phi_{\mathrm{Q}}&=\half \cdot \frac{1}{r^{3}} \int \rho\del{\vv{r}^{\prime}}
+    \del{3 Z^{\prime 2}-r^{\prime 2}} \de^{3} r^{\prime}
+  \end{align*}
+\item allgemeines Vektorpotential:
+  \begin{align*}
+    A(r)&=\frac{M_{0}}{4\pi} \int
+    \frac{j\del{\vv{r}^{\prime}}}{\abs{\vv{r}-\vv{r}^{\prime}}}
+    \de^{3} r^{\prime}
+  \end{align*}
+\item Maxwell--Gleichungen:
+  \begin{align*}
+    \vv{E}&=\frac{i}{k} \text{rot}\vv{B} & \vv{B}&=-\frac{i}{k}
+    \text{rot}\vv{E}\\
+    \text{Lösung: }\phi_{\mathrm{l}}^{\mathrm{m}}&=f_{\mathrm{l}}\del{k,r} Y_{\mathrm{lm}}(\theta,-l)
+  \end{align*}
+\item Drehimpulsoperator:
+  \begin{align*}
+    \vv{l}&=-i \del{\vv{r} \times \nab}
+  \end{align*}
+\item damit können Maxwell--Gleichungen umgeschrieben werden:
+  \begin{align*}
+    \vv{B}_{\mathrm{l}}^{\mathrm{m}}&=f_{l} \vv{l} Y_{\mathrm{lm}} &
+    \vv{E}_{\mathrm{l}}^{\mathrm{m}}&=\frac{i}{k} \text{rot} \vv{B}_{\mathrm{l}}^{\mathrm{m}}
+  \end{align*}
+\item mit vektoriellen Kugelfunktionen:
+  \begin{align*}
+    \vv{\chi}_{\mathrm{l}}^{\mathrm{m}}&=\frac{1}{\sqrt{l(l+1)}}
+    \vv{l} Y_{\mathrm{lm}}\\
+    \Rightarrow B_{\mathrm{l}}^{\mathrm{m}} &\sim f_{\mathrm{l}}
+    \vv{\chi}_{\mathrm{l}}^{\mathrm{m}} &
+    \vv{E}_{\mathrm{l}}^{\mathrm{m}}&\sim \frac{i}{k} \text{rot} f_{\mathrm{l}}
+    \vv{\chi}_{\mathrm{l}}^{\mathrm{m}}
+  \end{align*}
+\item Entwicklung des $B$-Felds nach Multipolkomponenten:
+  \begin{align*}
+    \vv{B}&=\sum_{l,m}
+    \left\{a(l,m)f_{\mathrm{l}}\vv{\chi}_{\mathrm{l}}^{\mathrm{m}}-b(lm)f_{\mathrm{l}}
+    \frac{i}{k} \text{rot} \vv{\chi}_{\mathrm{l}}^{\mathrm{m}} \right\}
+  \end{align*}
+  mit $a, b$ als Amplituden der Multipole
+\item \textbf{Quantisierung:} ein Multipol der Ordnung $l$ gehört zu
+  einem $\gamma$-Quant mit Drehimpuls $l\hbar$ ($z$-Komponente $m\hbar$)
+\item \textbf{Drehimpulserhaltung:}\\
+  Multipolstrahlung $\Rightarrow$ Drehimpulsänderung des Kerns
+  \begin{align*}
+    \vv{J}_{\mathrm{i}}-\vv{J}_{\mathrm{f}}&=\vv{l}
+    \abs{\vv{J}_{\mathrm{i}}-\vv{J}_{\mathrm{f}}}&\leq l \leq \vv{J}_{\mathrm{i}}+\vv{J}_{\mathrm{f}}
+  \end{align*}
+  "`Auswahlregeln für $\gamma$-Strahlung"'
+\end{itemize}
 
 \end{document}
